@@ -11,7 +11,7 @@ pipeline {
             }
             steps {
                 echo 'Hello world from Git!'
-                echo $DB_LOGIN
+                sh ("echo $DB_LOGIN")
                 sh 'printenv'
             }
         }
